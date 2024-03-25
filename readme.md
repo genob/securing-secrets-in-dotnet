@@ -1,10 +1,12 @@
 Options for securing
 
+- appsettings.Development.json
 - Environment variables
-- microsoft secrets mananger
+- microsoft secrets mananger (.net CORE apps)
 - Cred stash (naroncho)
-- user input
-- 
+- prompt for user input on each run
+- prompt for user input and persist
+- powershell scripts
 
 
 https://learn.microsoft.com/en-us/aspnet/core/security/data-protection/configuration/overview?view=aspnetcore-8.0
@@ -13,7 +15,7 @@ https://learn.microsoft.com/en-us/aspnet/core/security/data-protection/configura
 
 
 
-..from aleksey
+..from AG
 Running Playwright...
 
 prompt for 
