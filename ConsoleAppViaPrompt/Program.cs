@@ -1,23 +1,30 @@
 ﻿using System.Text;
 
-var passwordBuilder = new StringBuilder();
+Console.WriteLine("App ConsoleAppViaPrompt v1.0\n");
 
-ConsoleKeyInfo key;
+var key = GetUserPropmtedPassword("Enter your API key: ");
 
-Console.Write("Enter password: ");
-do
+Console.WriteLine($"\nConnecting to API via key {key}");
+
+
+static string GetUserPropmtedPassword(string prompt)
 {
-    key = Console.ReadKey(true);
 
-    // Check if the key is not Enter (to end password input)
-    if (key.Key != ConsoleKey.Enter)
+    var passwordStringBuilder = new StringBuilder();
+
+    ConsoleKeyInfo key;
+
+    Console.Write(prompt);
+    do
     {
-        // Append the character to the password builder
-        passwordBuilder.Append(key.KeyChar);
-        Console.Write("*");
-    }
-} while (key.Key != ConsoleKey.Enter);
+        key = Console.ReadKey(true);
 
-string password = passwordBuilder.ToString();
+        if (key.Key != ConsoleKey.Enter)
+        {
+            passwordStringBuilder.Append(key.KeyChar);
+            Console.Write("*");
+        }
+    } while (key.Key != ConsoleKey.Enter);
 
-Console.WriteLine($"\nConnecting to API via key {password}");
+    return passwordStringBuilder.ToString();
+}
