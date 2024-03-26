@@ -8,11 +8,8 @@
 
 
 downsides of this approach:
-- the appsettings.json file is not strongly typed
-- secrets are in the settings file
-
-
-can be easily checked in to source
+- secrets are store unencrypted in the settings file
+- risk of checking in the file into source
 
 ## Add appsettings.Development.json to .gitignore
 
