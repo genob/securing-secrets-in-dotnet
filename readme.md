@@ -1,6 +1,6 @@
 Options for securing
 
-- appsettings.Development.json
+- appsettings.json
 - Environment variables
 - microsoft secrets mananger (.net CORE apps)
 - Cred stash (naroncho)
