@@ -8,7 +8,7 @@ Options for securing
   - [Prompt user for secret on](./ConsoleAppViaPrompt/README.md)
     - prompt on each run 
     - prompt and persist (Windows DPAPI)
-  - 
+  - interactinv with AWS services (./ConsoleAppViaAws/README.md)
 - [Powershell Examples](./Powershell/README.md)
 
 
