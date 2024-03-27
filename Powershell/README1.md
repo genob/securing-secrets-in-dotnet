@@ -1,5 +1,3 @@
-
-
 # Using secrets with Powerhsell scripts
 
 Developers often need to use secrets in their powershell scripts.  Secrets are sensitive information that should be protected. 
