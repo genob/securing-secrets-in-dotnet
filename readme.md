@@ -1,4 +1,4 @@
-# Securing Serets in .NET Applications (C# and Powershell)
+# Securing Secrets in .NET Applications (C# and Powershell)
 
 This repository is a collection of projects that  provide examples of how to secure secrets in applications and scripts. The examples are provided in C# and Powershell and are generally geared toward the Microsoft stack, however the concepts can be applied more broadly. 
 
