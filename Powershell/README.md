@@ -123,7 +123,7 @@ the secret is read from environment variable when needed
 ```powershell
 ### script.ps1
 
-$apikey = System.Environment]::GetEnvironmentVariable('API_KEY', 'User')
+$apikey = [System.Environment]::GetEnvironmentVariable('API_KEY', 'User')
 
 # connect to some API using the key
 
