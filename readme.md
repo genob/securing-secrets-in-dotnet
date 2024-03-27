@@ -6,9 +6,9 @@ Additionally the projects can be used as a starting points and template for new 
 
 - C# Examples
   - [Secrets in appsettings.json](./ConsoleAppViaAppSettings/README.md)
-  - [Environment variables](./ConsoleAppViaEnvVars/README.md)
-  - [microsoft secrets mananger](./ConsoleAppViaSecretManager/README.md) (.net CORE apps)
-  - [Secrets in Cred Stash](./ConsoleAppViaCredStash/README.md) 
+  - [Secrets in Environment variables](./ConsoleAppViaEnvVars/README.md)
+  - [Secrets in Microsoft Secrets Mananger](./ConsoleAppViaSecretManager/README.md)
+  - [Secrets in Cred Stash](./ConsoleAppViaCredStash/README.md) (with AWS)
   - [Prompt user for secret on](./ConsoleAppViaPrompt/README.md)
     - prompt on each run 
     - prompt and persist (Windows DPAPI)
