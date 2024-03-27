@@ -15,5 +15,8 @@ Additionally the projects can be used as a starting points and template for new 
   - [interacting with AWS services](./ConsoleAppViaAws/README.md)
 - [Powershell Examples](./Powershell/README.md)
 
+## No Perfect Implementation
+
+The examples in this repository illustrate various approaches to securing secrets in applications.  The degrees of 'level of security' vary, as does the level complexity.  There is no perfec / secure implementation.  Use your brain and tailor implementation to the context at hand.  Additionally, remain vigilant, continuously update your security knowledge, and adapt to evolving threats to maintain the integrity and confidentiality of your applications' secrets.
 
 
