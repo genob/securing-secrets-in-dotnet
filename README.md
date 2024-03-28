@@ -5,7 +5,7 @@ This repository is a collection of projects that  provide examples of how to sec
 Additionally the projects can be used as a starting points and template for new projects. Samples include console/web applications and scripts that demonstrates how to secure secrets in a .NET Core application.
 
 - C# Examples
-  - [Secrets in appsettings.json](./ConsoleAppViaAppSettings/README.md)
+  - [Developer Secrets in `appsettings.Development.json`](./ConsoleAppViaAppSettings/README.md)
   - [Secrets in Environment variables](./ConsoleAppViaEnvVars/README.md)
   - [Secrets in Microsoft Secrets Mananger](./ConsoleAppViaSecretManager/README.md)
   - [Secrets in Cred Stash](./ConsoleAppViaCredStash/README.md) (with AWS)

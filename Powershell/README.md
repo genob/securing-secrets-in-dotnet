@@ -1,14 +1,14 @@
-# Using secrets with Powerhsell scripts
+# Using secrets with Powershell scripts
 
 Developers often need to use secrets in their powershell scripts.  Secrets are sensitive information that should be protected. 
 
-The samples below are written in powershell, but the concepts apply to any scripting language.
+The samples below are written in powershell, but the concepts can apply to ther scripting languages.
 
 Assume a script that uses a secret API Key to connect to an API.
 
-## Option (Non-Secure): Store the key right in the script
+## Store the key right in the script
 
-The secret key is hard-coded into the script. This is often how scripts are initially coded in their early stages.   
+The secret key is hard-coded in clear text into the script. This is often how scripts are initially coded in their early stages where security is not considered at all.   
 
 ```powershell
 ### hardcoded-secret.ps1
