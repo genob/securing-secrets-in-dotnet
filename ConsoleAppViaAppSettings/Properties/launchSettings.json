@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ConsoleAppViaAppSettings": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

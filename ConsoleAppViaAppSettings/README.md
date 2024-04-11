@@ -3,8 +3,6 @@
 - keep your "development" secrets out of `appsettings.json` 
 - use `appsettings.Development.json` instead
 - add `appsettings.Development.json` to `.gitignore`
-- (optional) add nesting in csproj to visually nest the settings files
-
 
 
 downsides of this approach:
@@ -16,6 +14,18 @@ downsides of this approach:
 this will ensure you do not accidentally check in your secrets into source control
 
 ![Appsettings Gitignore](appsettings-gitignore.png)
+
+## Checklist
+
+- Add `appsettings.json` file
+- Add `appsetting.Development.json` file
+- On both files, set the `Copy to Output Directory` setting to `Copy if Newer` or `Always`
+- Ensure the Environment varialble is set to `Development`
+    - For console host apps, use `DOTNET_ENVIRONMENT`
+    - For web apps, use `ASPNETCORE_ENVIRONMENT`
+- :exclamation: add `appsettings.Development.json` to .gitignore
+- (optional) add `appsettings.Development.json.sample` in csproj to visually nest the settings files
+- (optional) add nesting in csproj to visually nest the settings files
 
 ## Add file nesting 
 
