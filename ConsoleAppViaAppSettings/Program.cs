@@ -7,7 +7,7 @@ var host = Host.CreateDefaultBuilder().Build();
 var config = host.Services.GetService<IConfiguration>();
 var apiKey = config["apikey"];
 
-Console.WriteLine($"Current Environment: {host.Services.GetService<IHostEnvironment>().EnvironmentName}");
+Console.WriteLine($"Current Environment: {host.Services.GetService<IHostEnvironment>()}");
 
 Console.WriteLine($"API Key: {apiKey}");
 

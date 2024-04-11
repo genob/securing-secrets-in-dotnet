@@ -5,13 +5,6 @@
 - ensure `appsettings.Development.json` to .gitignore` to minimize risk of accidentally being added to source control
 
 
-downsides of this approach:
-- secrets are store unencrypted in the settings file
-- risk of checking in the file into source
-
-
-
-
 ## Checklist
 
 - Add `appsettings.json` file
@@ -42,3 +35,15 @@ add the following to .csproj
    </None>
   </ItemGroup>
   ```
+
+## Pros and Cons of storing Dev secrets in appsettings.Development.json
+
+### Pros
+
+- **More secure than in appsettings.json**: A level more 'secure' than storing them in directly `appsettings.json`.
+- **Convenience**: Easy to manage and access configuration settings.
+
+### Cons
+
+- **Risk of Exposure**: If the settings file is accidentally checked into source control, sensitive information can be exposed.
+- **Secrets are stored unencrypted** in the settings file on the local drive, which can pose a security risk
