@@ -2,18 +2,15 @@
 
 - keep your "development" secrets out of `appsettings.json` 
 - use `appsettings.Development.json` instead
-- add `appsettings.Development.json` to `.gitignore`
+- ensure `appsettings.Development.json` to .gitignore` to minimize risk of accidentally being added to source control
 
 
 downsides of this approach:
 - secrets are store unencrypted in the settings file
 - risk of checking in the file into source
 
-## Add appsettings.Development.json to .gitignore
 
-this will ensure you do not accidentally check in your secrets into source control
 
-![Appsettings Development](appsettings-development.png)
 
 ## Checklist
 
@@ -26,6 +23,8 @@ this will ensure you do not accidentally check in your secrets into source contr
 - :exclamation: add `appsettings.Development.json` to .gitignore
 - (optional) add `appsettings.Development.json.sample` in csproj to visually nest the settings files
 - (optional) add nesting in csproj to visually nest the settings files
+
+![Appsettings Development](appsettings-development.png)
 
 ## Add file nesting 
 
