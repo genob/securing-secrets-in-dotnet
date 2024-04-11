@@ -77,7 +77,7 @@ references:
 
 - **Security**: Environment variables are often considered more secure than settings files as they can be managed separately from the application code, reducing the risk of accidental exposure in source control.
 - **Flexibility**: Easy to change and manage across different environments without needing to change application code or configuration files.
-Isolation: Keeps sensitive keys out of the application's codebase and configuration files, reducing the risk of leaking sensitive data.
+- **Isolation**: Keeps sensitive keys out of the application's codebase and configuration files, reducing the risk of leaking sensitive data.
 - **12-factor-friendly** - follows [12-Factor app](https://12factor.net/) principles even on the local development environment
 
 ### Cons
