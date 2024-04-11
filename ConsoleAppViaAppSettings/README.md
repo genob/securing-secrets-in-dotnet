@@ -13,7 +13,7 @@ downsides of this approach:
 
 this will ensure you do not accidentally check in your secrets into source control
 
-![Appsettings Gitignore](appsettings-gitignore.png)
+![Appsettings Development](appsettings-development.png)
 
 ## Checklist
 
@@ -35,9 +35,11 @@ add the following to .csproj
  <ItemGroup>
     <None Update="appsettings.Development.json">
       <DependentUpon>appsettings.json</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="appsettings.Development.json.sample">
-      <DependentUpon>appsettings.json</DependentUpon>
-    </None>
+   <None Update="appsettings.Development.example.json">
+     <DependentUpon>appsettings.json</DependentUpon>
+     <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+   </None>
   </ItemGroup>
   ```
